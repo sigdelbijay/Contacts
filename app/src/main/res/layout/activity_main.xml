@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/createDatabaseBtn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Create Database"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:onClick="createDatabase"
+        />
+
+    <Button
+        android:id="@+id/addContactBtn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Add contact"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/createDatabaseBtn"
+        android:layout_toEndOf="@+id/createDatabaseBtn"
+        android:layout_marginLeft="10dp"
+        android:onClick="addContact"
+        android:clickable="false"
+        />
+
+    <Button
+        android:id="@+id/deleteContactBtn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Delete contact"
+        android:layout_below="@+id/createDatabaseBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:onClick="deleteContact"
+        android:clickable="false"
+        />
+
+    <Button
+        android:id="@+id/getContactsBtn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Get contacts"
+        android:layout_below="@+id/addContactBtn"
+        android:layout_toRightOf="@+id/deleteContactBtn"
+        android:layout_toEndOf="@+id/deleteContactBtn"
+        android:layout_marginLeft="10dp"
+        android:onClick="getContacts"
+        android:clickable="false"
+        />
+
+    <EditText
+        android:id="@+id/nameEditTxt"
+        android:inputType="textPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_below="@+id/deleteContactBtn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="15dp"
+        />
+
+    <EditText
+        android:id="@+id/emailEditTxt"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_below="@+id/nameEditTxt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="15dp"
+        />
+
+    <EditText
+    android:id="@+id/deleteIDEditTxt"
+        android:inputType="number"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="ID to delete"
+    android:layout_below="@+id/emailEditTxt"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true"
+    android:layout_margin="15dp"
+    />
+
+    <TextView
+        android:id="@+id/databaseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deleteIDEditTxt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        />
+
+    <Button
+        android:id="@+id/deleteDatabaseBtn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Delete database"
+        android:layout_below="@+id/databaseTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:onClick="deleteDatabase"
+        android:clickable="false"
+        />
+
+
+
+
+</RelativeLayout>
